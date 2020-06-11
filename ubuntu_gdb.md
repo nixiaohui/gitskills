@@ -1,6 +1,8 @@
 # gdb
 
 1. GDB功能及命令
+
+
 命令形式 | 功能解释 | 示例(gdb)
 --- | --- | ---
 gdb | 进入gdb调试 | gdb
@@ -66,6 +68,8 @@ welcome to change it and/or distribute copies of it under certain conditions.
 Type "show copying" to see the conditions.
 There is absolutely no warranty for GDB.  Type "show warranty" for details.
 This GDB was configured as "i386-suse-linux"...
+
+```
 (gdb) l     <-------------------- l命令相当于list，从第一行开始例出原码。
 1        #include <stdio.h>
 2
@@ -77,6 +81,9 @@ This GDB was configured as "i386-suse-linux"...
 8                        sum+=i;
 9                }
 10               return sum;
+```
+
+```
 (gdb)       <-------------------- 直接回车表示，重复上一次命令
 11       }
 12
@@ -88,6 +95,8 @@ This GDB was configured as "i386-suse-linux"...
 18               for(i=1; i<=100; i++)
 19               {
 20                       result += i;   
+```
+
 (gdb) break 16    <-------------------- 设置断点，在源程序第16行处。
 Breakpoint 1 at 0x8048496: file tst.c, line 16.
 (gdb) break func  <-------------------- 设置断点，在函数func()入口处。
