@@ -16,3 +16,6 @@ delete <break number> | 删除断点编号对应的断点 | d (delete) 1
 clear | 清空所有的断点信息 | clear
 continue | 继续执行程序直到下一个断点或程序结束 | c (continue)
 next | 单步调试 | n (next)
+step | 遇到函数调用时，进入函数内部高度 | s (step)
+print <value> | 显示变量的值 | p (print) index
+info <> | 用来显示各类信息，详情查看“help info” | i (info) break
