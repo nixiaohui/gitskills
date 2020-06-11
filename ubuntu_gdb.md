@@ -1,6 +1,7 @@
 # gdb
 
 1. GDB功能及命令
+
 命令形式 | 功能解释 | 示例(gdb)
 --- | --- | ---
 gdb | 进入gdb调试 | gdb
@@ -54,11 +55,12 @@ info <> | 用来显示各类信息，详情查看“help info” | i (info) brea
 ```
 
 编译生成执行文件：（Linux下）
-    hchen/test> cc -g tst.c -o tst
+    ```$ cc -g tst.c -o tst```
+  
 
 使用GDB调试：
 
-hchen/test> gdb tst  <---------- 启动GDB
+$ gdb tst  <---------- 启动GDB
 GNU gdb 5.1.1
 Copyright 2002 Free Software Foundation, Inc.
 GDB is free software, covered by the GNU General Public License, and you are
